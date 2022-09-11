@@ -45,50 +45,6 @@ const Home = () => {
 		  })
 	},[fetchlist])
 
-	
-
-	// const createnewuser = () => {fetch('https://assets.breatheco.de/apis/fake/todos/user/', {
-    //   	method: "POST", 
-	// 	body: JSON.stringify([]),
-	// 	headers: {
-	// 		"Content-Type": "application/json"
-	// 	  }
-    //   }
-	//   )
-
-	//   const accept = async ()=> {
-	// 	setTasks([...tasks, task])
-	//  await fetch(url, {
-	//    method: "PUT",
-	//    headers:  {
-	// 		"Content-Type": "application/json"
-	// 	  },
-	//    body: tasks
-	//  }) 
-	// setSending(true)
-	// }
-	
-	// useEffect(()=>{
-	//   getData()
-	// },[sending])
-	// const [sending, setSending] = useState(false)
-	// const edit = async () =>{
-	//   const res = await fetch(url, options)
-	//   return console.log("se ha modificado la tarea")
-	// }
-	// return (
-	//   <>
-	// 	<ul>
-	// 	  {mapper(data)}
-	// 	</ul>
-	//   </>
-	// )
-
-    // .catch(error => {
-    //     //error handling
-    //     console.log(error);
-    // })};
-
 	const url = `https://assets.breatheco.de/apis/fake/todos/user/monneratachiame`
 
 	// este delete esta deletando as tarefas e o usuario
@@ -99,9 +55,7 @@ const Home = () => {
 				"Content-Type": "application/json"
 			}
 		})
-		// setFetchlist([])
 		setToDoList([]);
-		// setFetchlist([{"label":"sample task","done":false}])
 	}
 
 	function deleteItem(index) {
@@ -144,7 +98,5 @@ const Home = () => {
 			</div>
 	);
 };
-
-
 
 export default Home;
